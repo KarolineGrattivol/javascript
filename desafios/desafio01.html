@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font: normal 18px Arial;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1>Sistema de Países</h1>
+    País <input type="text" name="txtpa" id="txtpa">
+    <input type="button" value="Verificar" onclick="resultado()">
+    
+    
+    <div id="res">
+
+    </div>
+
+    <script>
+        function resultado() {
+            var txtp = window.document.getElementById('txtpa')
+            var res = window.document.getElementById('res')
+            var pais = (txtp.value)
+            res.innerHTML = `<p>Vivendo em ${pais}</p>`
+            if (pais == 'Brasil') {
+                res.innerHTML = `<p><strong>Você é Brasileiro!</strong></p>`
+            }else {
+                res.innerHTML = `<p><strong>Você é Estrangeiro!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
