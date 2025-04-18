@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ @charset "UTF-8";
 
 body{
     background-color:rgb(246, 145, 133) ;
@@ -11,11 +11,25 @@ header{
 section{
     background-color: white;
     border-radius: 10px;
-    padding: 15px;
-    width: 500px;
+    padding: 20px;
+    width: 450px;
+    height: 350px;
     margin: auto;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.363);
 }
+
+div{
+    text-align: center;
+    
+}
+
+div#msg{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
 footer{
     color: white;
     text-align: center;
